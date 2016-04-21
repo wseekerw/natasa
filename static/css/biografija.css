@@ -1,0 +1,67 @@
+.biografija_slika_red {
+    background-size: 100% 100%;
+}
+
+.biografija_slika {
+    height: 48vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 64vw;
+    margin-left: 18vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#podloga_slike {
+    height: 6px;
+    background-color: #0d1a00; 
+}
+
+.biografija_tekst {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 20px;
+    margin-top: 5vw;
+    text-align: center;
+}
+
+#biografija_row,.biografija_ime {
+    background-color: #e6e6e6;
+    color: black;
+}
+
+#biografija_ime_1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+@media (min-width: 1440px) {
+    .biografija_slika {
+        width: 1000px;
+        margin-left: 212px;
+        height: 715px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+    .izlozbe1 {
+        margin-left: -50px;
+    }
+}
+
+@media (min-width: 410px) and (max-width: 767px) {
+    .izlozbe1 {
+        margin-left: 50px;
+    }
+}
+
+#izlozbe {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#donji_tekst {
+    margin-bottom: 45px;
+}

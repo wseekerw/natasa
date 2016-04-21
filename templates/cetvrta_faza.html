@@ -1,0 +1,80 @@
+{% extends "baza_galerije.html" %}
+{% load static %}
+
+
+
+<!DOCTYPE html>
+
+<head>
+    {% block cetvrta_faza_css %}
+    <link rel="stylesheet" href="{% static 'css/prva_faza.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cetvrta_faza.css' %}">
+
+    {% endblock %}
+    <title>{% block title_cetvrta_faza %}cetvrta faza{% endblock %}</title>
+</head>
+<body>
+
+
+
+
+
+
+
+{% block cetvrta_faza %}
+
+    <div class="col-lg-12 col-md-12 col-sm-12" id="pozadina" style="background-image: url({% static 'img/background-dark1.jpg' %});">
+        <div class="col-lg-12 col-md-12 col-sm-12" id="red1"><p id="naslov" class="cetvrta_faza_glave">Glave</p></div>
+        <div class="col-lg-12 col-md-12 col-sm-12 navtab_podloga" id="cetvrta_faza_podloga"></div>
+           {% for delo in slike %}
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#{{ delo.id }}" role="button" data-toggle="modal"><img class="slike animated" src="{{ delo.slike4.url }}" alt="nema slike"></a>
+            <div class="caption">
+                <h4 class="tekst_slike">Naziv: {{ delo.ime_slike4 }}</h4>
+                <p class="tekst_slike tekst_margina">Dimenzije: {{ delo.dimenzije4 }}</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: {{ delo.tehnika4 }}</p>
+            </div>
+        </div>
+        <!-- modal -->
+        <div id="{{ delo.id }}" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Glave</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{{ delo.slike4.url }}" alt="nema slike">
+                        <p class="tekst_slike" id="m1">Naziv: {{ delo.ime_slike4 }}</p>
+                        <p class="tekst_slike tekst_margina" id="m2">Dimenzije: {{ delo.dimenzije4 }}</p>
+                        <p class="tekst_slike tekst_margina donja_margina" id="m3">Tehnika: {{ delo.tehnika4 }}</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   {% endblock %}
+
+
+</body>
+</html>

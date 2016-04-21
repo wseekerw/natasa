@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title_biografija %}biografija{% endblock %}</title>
+    {% block biografija_css %}<link rel="stylesheet" href="{% static 'css/biografija.css' %}">{% endblock %}
+</head>
+<body>
+    {% block biografija %}
+    <div class="row biografija_slika_red" style="background-image: url({% static 'img/background1.jpg' %});">
+        <div class="col-sm-12 col-md-12 col-lg-12 biografija_slika" style="background-image: url({% static 'img/Biografija.jpg' %});"></div>
+    </div>
+    <div class="row" id="podloga_slike"></div>
+    <div class="row biografija_ime"><p id="biografija_ime_1">NATAŠA IVANIĆ</p></div>
+    <div class="row" id="biografija_row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <p class="biografija_tekst">Rođena je 1964. godine u Beogradu. Diplomirala je na FLU u Beogradu 1987. Član ULUS-a od 1988. Radi u Tehničkoj školi "Drvo-Art" kao profesor crtanja i slikanja.</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3"></div>
+        <div class="col-lg-9 col-md-9 col-sm-9">
+            <p id="izlozbe" class="izlozbe1">Izložbe:</p>
+            <p class="izlozbe1">1987. Izložba crteža studenata FLU (grupna izložba)</p>
+            <p class="izlozbe1">1988. Novi članovi ULUS-a(grupna izložba)</p>
+            <p class="izlozbe1">1989. N.U.Braća Stamenković, slike i crteži</p>
+            <p class="izlozbe1">1991. Glaerija ULUS-a "Čuvari Mape" (grupna izložba)</p>
+            <p class="izlozbe1">1992. Narodni Muzej, Zaječar - slike i crteži</p>
+            <p class="izlozbe1">1992. Galerija Biblioteke grada Beograda, ponovljena samostalna izložba iz Zaječara</p>
+            <p class="izlozbe1">1996. Galerija Plato, slike, crteži i objekti</p>
+            <p class="izlozbe1">1997. Centar za kulturnu dekontaminaciju - majski salon (grupna izložba)</p>
+            <p class="izlozbe1">1997. N.U.B.Adžija - crteži</p>
+            <p class="izlozbe1">1997. N.U.Braća Stamenković - slike i crteži</p>
+            <p class="izlozbe1">1998. Narodna Biblioteka "Vuk Karadžić" Veliko Gradište - ponovljena izložba iz Braće Stamenković</p>
+            <p class="izlozbe1">2002. Dom Armije - Deseti beogradski salon (grupna izložba)</p>
+            <p class="izlozbe1">2003. Kafić "Zlatni Vilajet" - crteži</p>
+            <p class="izlozbe1">2004. Zavod za proučavanje kulturnog razvitka - crteži</p>
+            <p class="izlozbe1">2009. Dom vazduhoplovstva Zemun - slike</p>
+            <p class="izlozbe1">2012. Istorijski arhiv Smederevo - slike</p>
+            <p class="izlozbe1">2013. Trstenik - Trijenale "Mixed medija" (grupna izložba)</p>
+            <p class="izlozbe1">2014. SKC Novi Beograd - slike</p>
+            <p class="izlozbe1">2014. Galerija Blok - "Mixed Medija" (grupna izložba)</p>
+            <p class="izlozbe1">2014. Galerija Blok - crteži</p>
+            <p class="izlozbe1">2014. DOB - Sajam psihodelije (grupna izložba)</p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <p class="biografija_tekst" id="donji_tekst">Učestvovala je na pet kolonija: Risan, Poganovski manastir, Lipovac kod Topole, Gamzigrad i Jahorina</p>
+        </div>
+    </div>
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+<html>
+<head>
+    <title>{% block title %}početna{% endblock %}</title>
+    {% block pocetna_css %}<link rel="stylesheet" href="{% static 'css/pocetna.css' %}">{% endblock %}
+</head>
+<body>
+    {% block pocetna_slika %}
+        <div class="row" id="pocetna_slika" style="background-image: url({% static 'img/Pocetna.JPG' %});">
+            <p class="glavni_tekst">Dobrodošli, moje ime je<br><span id="glavni_tekst1">NATAŠA IVANIĆ</span><br>SLIKARKA, PROFESOR, UMETNICA</p>
+        </div>
+        <div class="row" id="podloga_slike1"></div>
+        <div class="row" id="pozadina_portfolio" style="background-image: url({% static 'img/moj_portfolio_background.jpg' %});">
+            <div class="col-lg-12 col-md-12 col-sm-12 moj_portfolio">MOJ PORTFOLIO</div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <a href="{% url 'prva_faza' %}"><div class="container_for_portfolio animated" style="background-image: url({% static 'img/Bice-u-sumi.jpg' %});">
+                    <p class="portfolio_tekst">Biće u šumi</p>
+                </div></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <a href="{% url 'druga_faza' %}"><div class="container_for_portfolio animated" style="background-image: url({% static 'img/Unutra-i-napolju.jpg' %});">
+                    <p class="portfolio_tekst U_i_napolju">Unutra i napolju</p>
+                </div></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <a href="{% url 'treca_faza' %}"><div class="container_for_portfolio animated" style="background-image: url({% static 'img/Pocetna.JPG' %});">
+                    <p class="portfolio_tekst margina">Anđeli</p>
+                </div></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <a href="{% url 'cetvrta_faza' %}"><div class="container_for_portfolio animated" style="background-image: url({% static 'img/Glave.jpg' %});">
+                    <p class="portfolio_tekst margina">Glave</p>
+                </div></a>
+            </div>
+        </div>
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

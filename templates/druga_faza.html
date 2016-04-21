@@ -1,0 +1,73 @@
+{% extends "baza_galerije.html" %}
+{% load static %}
+
+
+<!DOCTYPE html>
+
+<head>
+    {% block druga_faza_css %}
+    <link rel="stylesheet" href="{% static 'css/prva_faza.css' %}">
+    <link rel="stylesheet" href="{% static 'css/druga_faza.css' %}">
+
+    {% endblock %}
+    <title>{% block title_druga_faza %}druga faza{% endblock %}</title>
+</head>
+<body>
+    {% block druga_faza %}
+
+    <div class="col-lg-12 col-md-12 col-sm-12" id="pozadina" style="background-image: url({% static 'img/druga_faza.png' %});">
+        <div class="col-lg-12 col-md-12 col-sm-12" id="red1"><p id="naslov">Unutra i napolju</p></div>
+        <div class="col-lg-12 col-md-12 col-sm-12 navtab_podloga"></div>
+           {% for delo in slike %}
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#{{ delo.id }}" role="button" data-toggle="modal"><img class="slike animated" src="{{ delo.slike2.url }}" alt="nema slike"></a>
+            <div class="caption">
+                <h4 class="tekst_slike">Naziv: {{ delo.ime_slike2 }}</h4>
+                <p class="tekst_slike tekst_margina">Dimenzije: {{ delo.dimenzije2 }}</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: {{ delo.tehnika2 }}</p>
+            </div>
+        </div>
+        <!-- modal -->
+        <div id="{{ delo.id }}" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Unutra i napolju</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{{ delo.slike2.url }}" alt="nema slike">
+                        <p class="tekst_slike">Naziv: {{ delo.ime_slike2 }}</p>
+                        <p class="tekst_slike tekst_margina">Dimenzije: {{ delo.dimenzije2 }}</p>
+                        <p class="tekst_slike tekst_margina donja_margina">Tehnika: {{ delo.tehnika2 }}</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        {% endfor %}
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   {% endblock %}
+
+</body>
+</html>

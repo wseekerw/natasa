@@ -1,0 +1,21 @@
+.modal_tekst {
+    color: black;
+}
+
+.cetvrta_faza_glave {
+    color:#d9d9d9;
+}
+
+.tekst_slike {
+    text-align: center;
+    font-size: 17px;
+    color: #f2f2f2;
+}
+
+#m1, #m2, #m3{
+    color: black;
+}
+
+#cetvrta_faza_podloga {
+    background-color: #666666;
+}

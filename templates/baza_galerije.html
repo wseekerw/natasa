@@ -1,0 +1,91 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="sh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/baza_galerije.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+
+    {% block prva_faza_css %}{% endblock %}
+    {% block druga_faza_css %}{% endblock %}
+    {% block treca_faza_css %}{% endblock %}
+    {% block cetvrta_faza_css %}{% endblock %}
+
+    <title>{% block title_prva_faza %}{% endblock %}
+           {% block title_druga_faza %}{% endblock %}
+           {% block title_treca_faza %}{% endblock %}
+           {% block title_cetvrta_faza %}{% endblock %}
+    </title>
+    <style>
+        .navtab_podloga {
+            height: 5px;
+            background-color: #0d1a00;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+        <div class="row" id="row_nav" style="background-image: url({% static 'img/Nav_background.jpg' %});">
+              <ul class="nav nav-tabs nav-justified">
+                  <li role="presentation"><a class="linkovi active" href="{% url 'pocetna' %}">Početna</a></li>
+                  <li role="presentation"><a class="linkovi" href="{% url 'galerija' %}">Galerija</a></li>
+                  <li role="presentation"><a class="linkovi" href="{% url 'biografija' %}">Biografija</a></li>
+                  <li role="presentation"><a class="linkovi" href="{% url 'kontakt' %}">Kontakt</a></li>
+              </ul>
+        </div>
+
+        <div class="row navtab_podloga"></div>
+        <div class="row">
+            {% block prva_faza %}{% endblock %}
+            {% block druga_faza %}{% endblock %}
+            {% block treca_faza %}{% endblock %}
+            {% block cetvrta_faza %}{% endblock %}
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row" id="footer">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <p class="footer_tekst1">SLIKARKA, PROFESOR, UMETNICA</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <p class="footer_tekst2">Živi i radi u Beogradu</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <p class="footer_tekst3">natasha.ivanich@gmail.com</p>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+
+</body>
+</html>

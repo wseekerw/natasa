@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    {% block galerija_css %}
+    <link rel="stylesheet" href="{% static 'css/galerija.css' %}">
+
+    {% endblock %}
+
+    <title>{% block title_galerija %}galerija{% endblock %}</title>
+</head>
+<body>
+{% block galerija %}
+    <div class="row" id="red_pozadina" style="background-image: url({% static 'img/background1.jpg' %});">
+        <div class="container">
+            <div class="row"><p id="naslov_stranice">Periodi umetničkog stvaralaštva</p></div>
+            <div class="row medja"></div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <a href="{% url 'prva_faza' %}"><img class="slike_galerija animated" src="{% static 'img/Dvoje.JPG' %}"></a>
+                    <a href="{% url 'prva_faza' %}"><p class="naslov_galerije">Biće u šumi<br>1989 - 1992</p></a>
+                </div>
+                <div class="col-lg-6col-md-6 col-sm-6">
+                    <p class="kratki_tekst_galerije">Slike Nataše Tasić nastaju dugo. One se i čitaju dugo. To su slike - procesi. Ako i odemo od neke njene slike, ili od svih, a da ne uspemo da otkrijemo ništa uznemiravajuće u njima, mi smo ipak prošli kroz malu radionicu traganja i zavirivanja s one strane kulisa, a možda se ONO toliko dobro skrilo da ga nismo prepoznali. Ali ONO je tu. Neko je iza vrata... Ne! Vrata su neko...</p>
+                    <button class="btn btn-primary dugme" role="button" data-toggle="modal" data-target="#myModal1">Opširnije</button>
+
+                    <!-- modal1 -->
+
+                </div>
+            </div>
+            <div class="row medja"></div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <a href="{% url 'druga_faza' %}"><img class="slike_galerija animated" src="{% static 'img/Akt2.jpg' %}"></a>
+                    <a href="{% url 'druga_faza' %}"><p class="naslov_galerije">Unutra i napolju<br>1993 - 1998</p></a>
+                </div>
+                <div class="col-lg-6col-md-6 col-sm-6">
+                    <p class="kratki_tekst_galerije">U ovom stvaralačkom ciklusu slikarka prvo istražuje intimu enterijera - "prazne" sobe (koju nam prikazuje svu treperavu, pulsirajuću, živu) - i tako određuje karakter i uspostavlja zakone tog u biti <span style="font-style: italic;">unutarnjeg</span> prostora, gde se odigrava drama čiji je ona budni svedok i hroničar.</p>
+                    <button class="btn btn-primary dugme" role="button" data-toggle="modal" data-target="#myModal2">Opširnije</button>
+
+                    <!-- modal2 -->
+
+                </div>
+            </div>
+            <div class="row medja"></div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <a href="{% url 'treca_faza' %}"><img class="slike_galerija animated" src="{% static 'img/Pocetna.JPG' %}"></a>
+                    <a href="{% url 'treca_faza' %}"><p class="naslov_galerije">Anđeli<br>1999 - 2008</p></a>
+                </div>
+                <div class="col-lg-6col-md-6 col-sm-6">
+                    <p class="kratki_tekst_galerije">U ambijentu grada anđeli Nataše Ivanić nemi su posmatrači. Nikoga ne čuvaju, nikome se ne obraćaju, nikoga ne podučavaju. Liče na obične ljude, tj. uglavnom nisu lepi i jedino ih krila odaju. I uvek su sami. Kao da nešto čekaju - poruku koju bi preneli ili nekoga kome bi je mogli preneti.</p>
+                    <button class="btn btn-primary dugme" role="button" data-toggle="modal" data-target="#myModal3">Opširnije</button>
+
+                    <!-- modal3 -->
+
+                </div>
+            </div>
+            <div class="row medja"></div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <a href="{% url 'cetvrta_faza' %}"><img class="slike_galerija animated" src="{% static 'img/cetvrta_galerija.jpg' %}"></a>
+                    <a href="{% url 'cetvrta_faza' %}"><p class="naslov_galerije">Glave<br>2012 - 2014</p></a>
+                </div>
+                <div class="col-lg-6col-md-6 col-sm-6">
+                    <p class="kratki_tekst_galerije">...Delujući tako i konsekventno, Nataša je uporedo sa održavanjem žestine izraza i napregnutosti, obezbedila punu koherenciju u svojim portretnim serijama, približavajući se sve više simboličnoj i apstrahovanoj, lakonski sadevenoj izražajnoj formi, kao obrascu unutrašnje, tragalačke energičnosti, bez mnogo davanja duga i obola procedurama koje je u akademskom obrazovanju ponela...</p>
+                    <button class="btn btn-primary dugme" role="button" data-toggle="modal" data-target="#myModal4">Opširnije</button>
+
+                    <!-- modal4 -->
+
+                </div>
+            </div>
+            <div class="row medja" id="poslednja_medja"></div>
+        </div>
+    </div>
+
+    <!-- modal1 -->
+    <div id="myModal1" class="modal fade" role="dialog">
+        <div class="modal-dialog modal11">
+            <div class="modal-content modal1">
+                <div class="modal-header">
+                    <p class="modal-title">Biće u šumi</p>
+                </div>
+                <div class="modal-body">
+                    <p>Izložba koje se ovde nudi posetiocu na otkrivanje počela je da se rađa u drugoj polovini 1990. godine. Tada je Nataša Tasić, nakon nekoliko godina sticanja sigurnosti u akademskom potezu uljem na platnu, hrabro krenula u mukotrpno izgrađivanje jedne osobene transrealnosti.
+                        Istraživanje mitologije kroz likovne radionice u dečijem Studiju stvaralačkog vaspitanja "Školigrica" pružilo joj je snažan impuls da zaviri s one strane "objektivne realnosti".
+                        Kada je oljuštila tanku foliju običnosti i banalnosti s pejsaža, prozora, ulice, stola u dnevnom boravku - otkrila je leglo mnoštva zagonetnih kreatura, više ili manje strašnih, više ili manje uočljivih, ali UVEK prisutnih.
+                        Kao kada dignete običan kamen u vašem vidokrugu, a ispod njega se gomila stonoga i buba rusa razmili bežeći od svetla u svoje rupe. Odjednom shvatimo da je priprosti monotoni pejsaž zapravo sumnjivo teško klupko koje je bolje ne rasplitati.
+                        Automobil parkiran u mraku neočekivano se otkriva kao pritajena spodoba urokljivih farova, koja je verovatno u dosluhu s onim zažarenim okom u mračnom i zabranjenom ćošku parkirališta.
+                    </p>
+                    <p>Ovaj elegantni horor daleko je od vulgarnosti igranja na prvu loptu. Kao što nam treba dosta vremena da u polutmini njenih slika naslutimo čega sve tu možda može biti, tako i Nataši treba dosta vremena da polako skine onu foliju banalnosti s prizora koji slika, i da pokuša da uhvati sve zagonetne tragove i odbljeske koji ostavljaju bića u povlačenju - a ni ona ni mi nismo sigurni šta je to maločas promaklo ili se promeškoljilo u mraku.
+                       Zato ona nikad ne eksplicira; njene slike se (kao uostalom i sama "realnost") u sebi bore za razrešenje, a rezultat nikad nije konačan.
+                        Kad u nekom čvorištu slike tenzija za rasplitanjem postaje prejaka, sukob se razliva do dezintegracije. Bolje da je tako, jer se ionako uvek iznova ispostavlja da u životu ništa nije jednoznačno, pa je bolje da se ne zavaravamo prividima konačnih rešenja.
+                        Čak i kad joj iz dubina refleksije o realnosti izroni anđeo umesto nemani, Nataša Tasić i njega istražuje razgrtanjem više velova na kojima je ispisano njegovo prisustvo.
+                        Anđeo se tako otkriva i kao čuvar ispod prozora, strog i pomalo ružan, ali pouzdan, i kao oličenje svečanog mira iz ikonografije slikaričinog osebujnog pravoslavlja, i kao biće prilično mučne telesnosti, i kao san o raspršenom svetlu, ali pored svega toga i kao znak pitanja o samom sebi.
+                    </p>
+                    <p>Slike Nataše Tasić nastaju dugo. One se i čitaju dugo. To su slike - procesi. Ako i odemo od neke njene slike, ili od svih, a da ne uspemo da otkrijemo ništa uznemiravajuće u njima, mi smo ipak prošli kroz malu radionicu traganja i zavirivanja s one strane kulisa, a možda se ONO toliko dobro skrilo da ga nismo prepoznali. Ali ONO je tu. Neko je iza vrata... Ne! Vrata su neko...</p>
+                    <p style="font-style: italic;">Aleksandar Gubaš</p>
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal1 zavrsetak -->
+
+    <!-- modal2 -->
+    <div id="myModal2" class="modal fade" role="dialog">
+        <div class="modal-dialog modal11">
+            <div class="modal-content modal1">
+                <div class="modal-header">
+                    <p class="modal-title">Unutra i napolju</p>
+                </div>
+                <div class="modal-body">
+                    <p>Izložene slike Nataše Docić-Tasić nastajale su u periodu socijalne krize, opšte emotivne nesigurnosti i duhovnog nespokojstva, kada su siromaštvo, bolest, beda, prostitucija, alkoholizam i kriminal sve više bivali atributi naše urbane svakodnevnice.</p>
+                    <p>Ta i takva "surova stvarnost" na njenim slikama nije eksplicitno prikazana, već se pre da naslutiti - kao nema pretnja ili pritajena opasnost - kao nagoveštaj onostranog.</p>
+                    <p>U ovom stvaralačkom ciklusu slikarka prvo istražuje intimu enterijera - "prazne" sobe (koju nam prikazuje svu treperavu, pulsirajuću, živu) - i tako određuje karakter i uspostavlja zakone tog u biti <span style="font-style: italic;">unutarnjeg</span> prostora, gde se odigrava drama čiji je ona budni svedok i hroničar.</p>
+                    <p>Na sledećim platnima u sve ogoljeniji prostor uvodi ljudsku figuru koja svojim odnosom prema jedinom preostalom prepoznatljivom objektu - prema prozoru - bilo da u strahu ne sme kroz njega da pogleda, bilo da mu nezaintersovano okreće leđe, ili, pak, mirno i zamišljeno posmatra - pokazuje svoj odnos prema svetu i životu koji se nalazi tamo negde napolju.</p>
+                    <p>Čovek se potom oslobađa straha od sveta - prozor je zaboravljen i više ga nema, ostao je samo mistično osvetljen unutrašnji prostor - čovek sad kao da nije nigde, to jest, utopljen u prostor postaje deo njega i prepušta se vanvremenoj magiji trenutka.</p>
+                    <p>Slikarka nam na kraju pokazuje i drugu stranu - ono što je napolju. U svetu u kome je sve manje mesta za osećajnost - za telesnost - mogu opstati samo "skamenjene" glave, i mi o tom svetu najviše i saznajemo iz njihovih sleđenih grimasa obasjanih hladnim uličnim svetlima velegrada.</p>
+                    <p>Kada se stvaralački čin nametne kao imperativ, onda je stil konsekvenca unutarnjeg stanja. Natašino slikarstvo u suštini je imaginativno a ona je prosto opsednuta bojom. Figure i predmete ne oivičava linijom, već njihov oblik sugeriše grupišući, suprotstavljajući i/ili preplićući površine intenzivnih boja. Iako je u izrazu ekspresivna, naginje ravnoteži i gotovo lirskoj harmoniji.</p>
+                    <p style="font-style: italic;">Milorad Ivanić</p>
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal2 zavrsetak -->
+
+    <!-- modal3 -->
+    <div id="myModal3" class="modal fade" role="dialog">
+        <div class="modal-dialog modal11">
+            <div class="modal-content modal1">
+                <div class="modal-header">
+                    <p class="modal-title">Anđeli</p>
+                </div>
+                <div class="modal-body">
+                    <p>Anđeo(glasnik), nebeski duh za koga se veruje da je božji vesnik ili posrednik između Boga ili bogova i ljudi.</p>
+                    <p>U drevnoj Grčkoj religiji, u Judaizmu i Hrišćanstvu, kao i u Islamu, smatralo se da su u odnos između čoveka i natprirodnog umešani i božanski glasnici - anđeli - poslati ljudima da ih uče, obaveštavaju ili zapovedaju. Anđeo može imati i ulogu zaštitnika - "čuvara", nebeskog ratnika, pa čak i kosmičke sile.</p>
+                    <p>Međutim, linija koja deli dobrog anđela od lošeg anđela(demona) ponekad je nejasna.</p>
+                    <p>U ambijentu grada anđeli Nataše Ivanić nemi su posmatrači. Nikoga ne čuvaju, nikome se ne obraćaju, nikoga ne podučavaju. Liče na obične ljude, tj. uglavnom nisu lepi i jedino ih krila odaju. I uvek su sami. Kao da nešto čekaju - poruku koju bi preneli ili nekoga kome bi je mogli preneti.</p>
+                    <p>Mešanje eksterijera i enterijera čini da prostor deluje metafizički a tendencija da se slikanim objektima menja izvorno značenje stvara nadrealističku atmosferu; po Natašinoj meri anđela.</p>
+                    <p style="font-style: italic;">Milorad Ivanić</p>
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal3 zavrsetak -->
+
+    <!-- modal4 -->
+    <div id="myModal4" class="modal fade" role="dialog">
+        <div class="modal-dialog modal11">
+            <div class="modal-content modal1">
+                <div class="modal-header">
+                    <p class="modal-title">Glave</p>
+                </div>
+                <div class="modal-body">
+                    <p>U izobilju alternativa koje su donosile brojne figurativne vrste i podvrste raznorodnih poetika u poslednjim decenijama prohujalog veka i osvita novog milenijuma nisu zaboravljeni ni već osveštali žanrovi i motivske opsesije već punog kruga modernizma; pa tako i mitologije portreta u starom i obnovljenom ruhu.
+                        Predmet kolektivnih izložbenih kolekcija, konkursnih smotri, takmičenja, portret je uvek bio aktuelizovan, podsticaj za studije i doktorate, uporište starih i novih akademizama.
+                        Ni ono što je namerila da u sklopu samostalne izložbe slika -ulja na platnu- prikaže Nataša Ivanić, nije tek nekakav segment novijih figuracija, niti odgovor na uobičajene zahteve kakvih je bilo, naročito u građanskim ambijentima, već je njen izbor išao od urođene stečene i instiktivne sklonosti, prirodnog izbora i kombinacije već ispisanog, analitičkog likovnog rukopisa, subliniranom u kriptografiji "potkožnog" poniranja i sintetičkog obuhvata ekspresije, linije i boje na graničnim obzorjima apstrakcije, snažna ritmičnost obojenih polja, površinskih i unutrašnjih aspekata građe, objedinjena je u snažnom i gustom hromatizmu-intenzivnom kolorizmu, pretežno toplijim sklopovima, ili sa prodornim akcentima plavih i zelenih, sa zadržavanjem kontrastnih efekata i na velikoj distanci, sa "zaboravom" lokalnog tona.
+                        Delujući tako i konsekventno, Nataša je uporedo sa održavanjem žestine izraza i napregnutosti, obezbedila punu koherenciju u svojim portretnim serijama, približavajući se sve više simboličnoj i apstrahovanoj, lakonski sadevenoj izražajnoj formi, kao obrascu unutrašnje, tragalačke energičnosti, bez mnogo davanja duga i obola procedurama koje je u akademskom obrazovanju ponela.
+                        U pojedinim simboličkim tvorevinama u studijama uskovitlanih linija glava, slično onakvim koje su krasile kinekse traktate portretnim šemama, u nizovima poteza sa belim akcentima, portreti se okreću ka vrtložnim stanjima sa potezima bele boje u naslojavanjima elipsoidnog okvira kao što godovi na poprečnom preseku stabla svedoče o rastu i debljini organskog tkiva.
+                        Njen "portretni" kolorizam ispunjen je slikarskom materijalnošću kao unutrašnja, delatna energija, a ne zbir opažajnih refleksa na mirnoj površini, na suprotnoj obali onih mitologija koje su proishodile od Narcisa samog.
+                        U demonstracijama određenih sintetičkih procedura Nataša je zaokružila pune krugove takvih motivskih preokupacija.
+                    </p>
+                    <p style="font-style: italic;">Dušan Đokić</p>
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal4 zavrsetak -->
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+</body>
+</html>
+
+<!-- <div class="row"><a href="{% url 'prva_faza' %}">PRVA FAZA</a></div>
+    <div class="row"><a href="{% url 'druga_faza' %}">DRUGA FAZA</a></div>
+    <div class="row"><a href="{% url 'treca_faza' %}">TRECA FAZA</a></div>
+    <div class="row"><a href="{% url 'cetvrta_faza' %}">CETVRTA FAZA</a></div> -->
