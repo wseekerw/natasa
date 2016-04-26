@@ -1,0 +1,92 @@
+/* navbar */
+.linkovi {
+    color: #3d5c5c;
+    font-size: 18px;
+    font-family:"Lucida Console";
+    font-weight: 550;
+}
+
+.nav-tabs.nav-justified > li > a {
+  margin-bottom: auto;
+}
+
+.nav > li > a:hover {
+    color: black;
+}
+
+
+.navtab_podloga {
+    margin-top: auto;
+}
+
+#row_nav {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* navbar zavrsetak */
+
+/* footer */
+
+#footer {
+    background-color: #262626;
+    margin-bottom: 0px;
+}
+
+.footer_tekst1 {
+    color:#bfbfbf;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.footer_tekst2 {
+    color:#bfbfbf;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Book Antiqua";
+    letter-spacing: 1px;
+}
+
+.footer_tekst3 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    color:#bfbfbf;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* footer zavrsetak */
+.container {
+    width: 100vw;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 1440px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .navtab_podloga {
+        margin-top: 0px;
+    }
+    .container {
+        width: 94vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+}
+
+
+
+
+
+
+
+
+

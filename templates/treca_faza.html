@@ -17,35 +17,930 @@
      <div class="col-lg-12 col-md-12 col-sm-12" id="pozadina" style="background-image: url({% static 'img/Nav_background.jpg' %});">
         <div class="col-lg-12 col-md-12 col-sm-12" id="red1"><p id="naslov">Anđeli</p></div>
         <div class="col-lg-12 col-md-12 col-sm-12 navtab_podloga"></div>
-           {% for delo in slike %}
+         <!-- slika1 -->
         <div class="col-md-4 col-sm-4 col-lg-4">
-            <a href="#{{ delo.id }}" role="button" data-toggle="modal"><img class="slike animated" src="{{ delo.slike3.url }}" alt="nema slike"></a>
+            <a href="#modal1" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/01. Kosancicev Venac 60x45.JPG'%}" alt="nema slike"></a>
             <div class="caption">
-                <h4 class="tekst_slike">Naziv: {{ delo.ime_slike3 }}</h4>
-                <p class="tekst_slike tekst_margina">Dimenzije: {{ delo.dimenzije3 }}</p>
-                <p class="tekst_slike tekst_margina donja_margina">Tehnika: {{ delo.tehnika3 }}</p>
+                <p class="tekst_slike">Naziv: osančićev venac</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 60x45</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
             </div>
         </div>
-        <!-- modal -->
-        <div id="{{ delo.id }}" class="modal fade" role="dialog">
+         <!-- modal1 -->
+        <div id="modal1" class="modal fade" role="dialog">
             <div class="modal-dialog modal11">
                 <div class="modal-content modal1">
                     <div class="modal-header">
                         <p class="modal-title">Anđeli</p>
                     </div>
                     <div class="modal-body">
-                        <img src="{{ delo.slike3.url }}" alt="nema slike">
-                        <p class="tekst_slike">Naziv: {{ delo.ime_slike3 }}</p>
-                        <p class="tekst_slike tekst_margina">Dimenzije: {{ delo.dimenzije3 }}</p>
-                        <p class="tekst_slike tekst_margina donja_margina">Tehnika: {{ delo.tehnika3 }}</p>
+                        <img src="{% static 'img/01. Kosancicev Venac 60x45.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Kosančićev venac</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 60x45</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- modal1 zavrsetak -->
+            <!-- slika2 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal2" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/02. Exit 35x24.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Exit</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 35x24</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
 
-         {% endfor %}
+            </div>
+        </div>
+        <!-- modal2 -->
+        <div id="modal2" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/02. Exit 35x24.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Exit</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 35x24</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal2 zavrsetak -->
+            <!-- slika3 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal3" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/04. PC Angel 50x25.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: PC Angel</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 50x25</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
 
+            </div>
+        </div>
+        <!-- modal3 -->
+        <div id="modal3" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/04. PC Angel 50x25.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: PC Angel</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 50x25</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal3 zavrsetak -->
+            <!-- slika4 -->
+  <!--      <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal4" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'Balkan 100x70.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Serbia</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 40x32</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal4 -->
+  <!--       <div id="modal4" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/05. Serbia 40x32.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Serbia</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 40x32</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal4 zavrsetak -->
+            <!-- slika5 -->
+  <!--      <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal5" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'Balkan 100x70.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Glava</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 72x52</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal5 -->
+ <!--       <div id="modal5" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/5Glava.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Glava</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 72x52</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na kartonu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal5 zavrsetak -->
+            <!-- slika6 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal6" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/05. Serbia 40x32.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Serbia</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 30x32</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal6 -->
+        <div id="modal6" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/05. Serbia 40x32.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Serbia</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 40x32</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal6 zavrsetak -->
+            <!-- slika7 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal7" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Balkan 100x70.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Balkan</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 100x70</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal7 -->
+        <div id="modal7" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Balkan 100x70.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Balkan</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 100x70</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal7 zavrsetak -->
+            <!-- slika8 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal8" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Cosak1 80x50.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Ćošak</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 80x50</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal8-->
+        <div id="modal8" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Cosak1 80x50.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Ćošak</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 80x50</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal8 zavrsetak -->
+            <!-- slika9 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal9" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Crossroads 35x26.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Crossroads</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 35x26</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal9-->
+        <div id="modal9" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Crossroads 35x26.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Crossroads</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 35x26</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal9 zavrsetak -->
+            <!-- slika10 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal10" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Dole na uglu 40x34.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Dole na uglu</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 40x34</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal10 -->
+        <div id="modal10" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Dole na uglu 40x34.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Dole na uglu</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 40x34</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal10 zavrsetak -->
+            <!-- slika11 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal11" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Entropija, suza, mrak....80x50.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Entropija</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 80x50</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal11 -->
+        <div id="modal11" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Entropija, suza, mrak....80x50.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Entropija</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 80x50</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal11 zavrsetak -->
+        <!-- slika12 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal12" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/First Aid 50x35.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: First Aid</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 50x35</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal12 -->
+        <div id="modal12" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/First Aid 50x35.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: First Aid</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 50x35</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal12 zavrsetak -->
+        <!-- slika13 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal13" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/gipsy eye 60x50.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: gipsy eye</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 60x50</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal13 -->
+        <div id="modal13" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/gipsy eye 60x50.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: gipsy eye</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 60x50</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal13 zavrsetak -->
+        <!-- slika14 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal14" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/High Times 50x60.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: High Times</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 50x60</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal14 -->
+        <div id="modal14" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/High Times 50x60.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: High Times</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 50x60</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal14 zavrsetak -->
+        <!-- slika15 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal15" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Kalemegdan 100x70.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Kalemegdan</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 100x70</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal15 -->
+        <div id="modal15" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Kalemegdan 100x70.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Kalemegdan</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 100x70</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal15 zavrsetak -->
+        <!-- slika16 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal16" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Kruna - pismo 42x30.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Kruna - pismo</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 42x30</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal16 -->
+        <div id="modal16" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Kruna - pismo 42x30.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Kruna - pismo</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 42x30</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal16 zavrsetak-->
+         <!-- slika17 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal17" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Mastanja luda 80x50.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Mastanja luda</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 80x50</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal17 -->
+        <div id="modal17" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Mastanja luda 80x50.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Mastanja luda</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 80x50</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal17 zavrsetak-->
+         <!-- slika18 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal18" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/NBAngel 40x20.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: NBAngel</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 40x20</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal18 -->
+        <div id="modal18" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/NBAngel 40x20.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: NBAngel</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 40x20</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal18 zavrsetak-->
+         <!-- slika19 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal19" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Nocni cuvar 42x32.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Nocni cuvar</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 42x32</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal19 -->
+        <div id="modal19" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Nocni cuvar 42x32.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Nocni cuvar</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 42x32</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal19 zavrsetak-->
+         <!-- slika20 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal20" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Nostalgija 35x25.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Nostalgija</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 35x25</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal20 -->
+        <div id="modal20" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Nostalgija 35x25.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Nostalgija</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 35x25</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal20 zavrsetak-->
+         <!-- slika21 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal21" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Obelisk Obrenovica 90x50.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Obelisk Obrenovića</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 90x50</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal21 -->
+        <div id="modal21" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Obelisk Obrenovica 90x50.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Obelisk Obrenovića</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 90x50</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal21 zavrsetak-->
+         <!-- slika22 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal22" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Obilicev venac 40x20.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Obilićev venac</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 40x20</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal22 -->
+        <div id="modal22" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Obilicev venac 40x20.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Obilićev venac</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 40x20</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal22 zavrsetak-->
+         <!-- slika23 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal23" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/One Way Out 60x50.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: One Way Out</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 60x50</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal23 -->
+        <div id="modal23" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/One Way Out 60x50.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: One Way Out</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 60x50</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal23 zavrsetak-->
+         <!-- slika24 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal24" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Razgovor 45x35.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Razgovor</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 45x35</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal24 -->
+        <div id="modal24" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Razgovor 45x35.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Razgovor</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 45x35</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal24 zavrsetak-->
+         <!-- slika25 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal25" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Shaman 42x31.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Shaman</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 42x31</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal25 -->
+        <div id="modal25" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Shaman 42x31.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Shaman</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 42x31</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal25 zavrsetak-->
+         <!-- slika26 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal26" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Signali nad gradom 30x27.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Signali</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 30x27</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal26 -->
+        <div id="modal26" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Signali nad gradom 30x27.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Signali</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 30x27</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal26 zavrsetak-->
+         <!-- slika27 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal27" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Sitting on a Top of the World 80x50.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Top of the World</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 80x50</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal27-->
+        <div id="modal27" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Sitting on a Top of the World 80x50.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Top of the World</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 80x50</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal27 zavrsetak-->
+         <!-- slika28 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal28" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Situacija 40x30.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Situacija</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 40x30</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal28 -->
+        <div id="modal28" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Situacija 40x30.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Situacija</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 40x30</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal28 zavrsetak-->
+         <!-- slika29 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal29" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Soba s pogledom 80x50.jpg.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Soba s pogledom</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 80x50</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal29 -->
+        <div id="modal29" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Soba s pogledom 80x50.jpg.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Soba s pogledom</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 80x50</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal29 zavrsetak-->
+         <!-- slika30 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal30" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Surova romantika 60x40.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Surova romantika</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 60x40</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal30 -->
+        <div id="modal30" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Surova romantika 60x40.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Surova romantika</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 60x40</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal30 zavrsetak-->
+         <!-- slika31 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal31" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Tamna svetlost velegrada 30x20.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Tamna svetlost</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 30x20</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal31 -->
+        <div id="modal31" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Tamna svetlost velegrada 30x20.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Tamna svetlost</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 30x20</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal31 zavrsetak-->
+         <!-- slika32 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal32" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/Tomahawk 43x31.JPG'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: Tomahawk</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 43x31</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal32 -->
+        <div id="modal32" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/Tomahawk 43x31.JPG'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: Tomahawk</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 43x31</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal32 zavrsetak-->
+         <!-- slika33 -->
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <a href="#modal33" role="button" data-toggle="modal"><img class="slike animated" src="{% static 'img/TVAngel 80x50.jpg'%}" alt="nema slike"></a>
+            <div class="caption">
+                <p class="tekst_slike">Naziv: TVAngel</p>
+                <p class="tekst_slike tekst_margina">Dimenzije: 80x50</p>
+                <p class="tekst_slike tekst_margina donja_margina">Tehnika: ulje na platnu</p>
+
+            </div>
+        </div>
+        <!-- modal33 -->
+        <div id="modal33" class="modal fade" role="dialog">
+            <div class="modal-dialog modal11">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <p class="modal-title">Anđeli</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{% static 'img/TVAngel 80x50.jpg'%}" alt="nema slike">
+                        <p class="tekst_slike crno">Naziv: TVAngel</p>
+                        <p class="tekst_slike tekst_margina crno">Dimenzije: 80x50</p>
+                        <p class="tekst_slike tekst_margina donja_margina crno">Tehnika: ulje na platnu</p>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- modal33 zavrsetak-->
 
      </div>
 

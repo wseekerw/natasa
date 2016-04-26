@@ -73,7 +73,10 @@ a:hover {
 
 .kratki_tekst_galerije {
     margin-top: 75px;
-    margin-right: 50px;
+    margin-right: 120px;
+    font-size: 13px;
+    color: black;
+    text-align: center;
 }
 
 .medja {
@@ -88,7 +91,6 @@ a:hover {
 }
 
 #naslov_stranice {
-    text-align: center;
     color: black;
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 30px;
@@ -103,7 +105,7 @@ a:hover {
     border-width: 1px 1px 1px 1px;
     border-color: black;
     font-weight: bold;
-    margin-left: 15vw;
+    margin-left: 11vw;
     margin-top: 20px;  
 }
 
@@ -163,5 +165,81 @@ a:hover {
         width: 60vw;
         margin-bottom: 30px;
         margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .medja {
+    margin-right: 8vw;
+    margin-left: 1vw;
+}
+
+}
+@media (min-width: 768px) and (max-width: 768px) {
+    .dugme {
+        margin-left: 10vw;
+    }
+    .kratki_tekst_galerije {
+    margin-right: 90px;
+    font-size: 13px;
+    margin-left: 10px;
+    }
+    
+}
+
+@media (min-width: 769px) and (max-width: 959px) {
+    #naslov_stranice {
+    margin-left: 17vw;
+    }
+    .kratki_tekst_galerije {
+    margin-right: 90px;
+    font-size: 13px;
+    margin-left: 10px;
+    }
+    .dugme {
+        margin-left: 10vw;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1280px) {
+    #naslov_stranice {
+    margin-left: 23vw;
+    }
+    .kratki_tekst_galerije {
+    font-size: 14px;
+    
+}
+.dugme {
+    margin-left: 12vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    #naslov_stranice {
+    text-align: center;
+    }
+}
+
+@media (min-width: 1279px) and (max-width: 1439px) {
+    #naslov_stranice {
+    margin-left: 26vw;
+    }
+    .kratki_tekst_galerije {
+    font-size: 14px;
+    }
+    .dugme {
+        margin-left: 13.5vw;
+    }
+}
+
+@media (min-width: 1440px) {
+    #naslov_stranice {
+    text-align: center;
+    }
+    .kratki_tekst_galerije {
+    font-size: 14px;
+    }
+    .dugme {
+        margin-left: 220px;
     }
 }

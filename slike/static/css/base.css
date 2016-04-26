@@ -71,11 +71,25 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px) {
     .navtab_podloga {
         margin-top: 0px;
     }
+    .container {
+        width: 94vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
 }
+
+.body {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+
 
 
 
