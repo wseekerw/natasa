@@ -124,19 +124,11 @@ a:hover {
     border-radius: 0px;
 }
 
-.modal11 {
-    width: 90vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
+
+
+
 /* modal zavrsetak */
 
-@media (min-width: 1440px) {
-    .modal11 {
-        width: 1140px;
-        margin-left: 385px;
-    }
-}
 
 @media (min-width: 411px) and (max-width: 767px) {
     .kratki_tekst_galerije {
@@ -242,4 +234,7 @@ a:hover {
     .dugme {
         margin-left: 220px;
     }
+    
+    
+    
 }

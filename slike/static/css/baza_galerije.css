@@ -34,11 +34,6 @@
     border-radius: 0px;
 }
 
-.modal11 {
-    width: 90vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
 
 /* footer */
 
@@ -84,10 +79,7 @@
     .container {
         width: 1440px;
     }
-    .modal11 {
-        width: 1140px;
-        margin-left: 385px;
-    }
+    
 }
 
 @media (min-width: 768px) {
