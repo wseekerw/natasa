@@ -25,7 +25,7 @@ SECRET_KEY = 'zl7kqiqoekx6ny_ar+5)sdtq+7k4-rg#2dorjosmq)ngx_$k!z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -134,8 +134,9 @@ DATABASES['default'].update(db_from_env)
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['*']
 
+# ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = []
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
